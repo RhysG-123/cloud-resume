@@ -4,8 +4,7 @@ on:
   push:
     branches:
       - main
-
-  workflow_dispatch:  # 👈 Manual trigger
+  workflow_dispatch:
 
 jobs:
   deploy:
@@ -22,10 +21,13 @@ jobs:
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           client-secret: ${{ secrets.AZURE_CLIENT_SECRET }}
 
+      - name: Set Azure subscription
+        run: az account set --subscription ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
       - name: Upload files to Azure Storage
         run: |
           az storage blob upload-batch \
             --destination \$web \
-            --account-name rhysresumeweb \
+            --account-name <your-storage-account-name> \
             --source . \
             --overwrite
