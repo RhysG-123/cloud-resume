@@ -23,6 +23,6 @@ jobs:
         run: |
           az storage blob upload-batch \
             --destination \$web \
-            --account-name <your-storage-account-name> \
+            --account-name rhysresumeweb \
             --source . \
             --overwrite
