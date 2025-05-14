@@ -70,11 +70,22 @@
 
   <footer>
     <p>References available upon request.</p>
+    <p>Visitor count: <span id="visitor-count">Loading...</span></p>
   </footer>
-
- <!-- Version: 1.1 | Last updated: 2025-05-13 | Deployed via GitHub Actions -->
-
-<!-- Netlify test -->
-
+  <script>
+    fetch("https://crc-function-app.azurewebsites.net/api/visitorcounter")
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById("visitor-count").innerText = data.count;
+      })
+      .catch(err => {
+        console.error("Visitor counter failed:", err);
+        document.getElementById("visitor-count").innerText = "Error";
+      });
+  </script>
 </body>
 </html>
+
+
+ <!-- Version: 1.2 | Last updated: 2025-05-13 | Deployed via GitHub Actions -->
+ <!-- Added Visitor Count -->
