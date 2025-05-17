@@ -47,7 +47,7 @@ Netlify also manages:
 
 The frontend connects to an Azure Function App hosted at:
 
-'https://crc-function-app.azurewebsites.net/api/VisitorCounter'
+https://crc-function-app.azurewebsites.net/api/VisitorCounter
 
 
 This API is called via JavaScript on page load to increment and display the current visitor count.
