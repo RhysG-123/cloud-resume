@@ -1,124 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rhys | Cloud Resume</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>Rhys Goonan</h1>
-    <p>Cloud Engineer</p>
-  </header>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rhys Goonan | Cloud Resume</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body lang="en">
+    <section id="main">
+      <header id="title">
+        <h1>Rhys Goonan</h1>
+        <span class="subtitle">Cloud Engineer</span>
+      </header>
 
-  <section>
-    <h2>Contact</h2>
-    <p>Email: rhysgoonan@gmail.com</p>
-    <p>Phone: 0459 343 085</p>
-    <p>Location: Melbourne, VIC</p>
-    <p>GitHub: <a href="https://github.com/RhysG-123">github.com/RhysG-123</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/rhysgoonan">linkedin.com/in/rhysgoonan</a></p>
-  </section>
+      <section class="main-block">
+        <h2><i class="fa fa-suitcase"></i> Experience</h2>
 
-  <section>
-    <h2>Profile</h2>
-    <p>Cloud engineer with real-world experience building secure and scalable environments in Microsoft Azure. Delivered projects using Bicep and GitHub Actions. Also experienced in governance controls like RBAC, tagging policies, and Azure Policy.</p>
-  </section>
+        <section class="blocks">
+          <div class="date"><span>2022</span><span>Present</span></div>
+          <div class="decorator"></div>
+          <div class="details">
+            <header>
+              <h3>Operator</h3>
+              <span class="place">Virgin Australia</span>
+              <span class="location">Melbourne, VIC</span>
+            </header>
+            <div>
+              <ul>
+                <li>Coordinated ground operations in a time-critical aviation environment</li>
+                <li>Collaborated with engineers and cross-functional teams using M365, Oracle, and Shiftlogic</li>
+                <li>Improved team communication and task flow with Microsoft Teams and structured handovers</li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
-  <section>
-    <h2>Skills</h2>
-    <ul>
-      <li>Azure</li>
-      <li>Bicep</li>
-      <li>Azure Policy</li>
-      <li>RBAC</li>
-      <li>GitHub Actions</li>
-      <li>Cosmos DB</li>
-      <li>PowerShell</li>
-      <li>CI/CD</li>
-      <li>Microsoft 365</li>
-      <li>Networking & NSGs</li>
-      <li>Oracle & Citrix</li>
-    </ul>
-  </section>
+        <section class="blocks">
+          <div class="date"><span>2015</span><span>2022</span></div>
+          <div class="decorator"></div>
+          <div class="details">
+            <header>
+              <h3>Service Supervisor & Storeman</h3>
+              <span class="place">Coles Supermarkets</span>
+              <span class="location">Melbourne, VIC</span>
+            </header>
+            <div>
+              <ul>
+                <li>Delivered customer service and supervised operations in a fast-paced retail setting</li>
+                <li>Used Microsoft Office for scheduling, inventory management, and reporting</li>
+                <li>Trained staff and managed shift coordination to meet service targets</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </section>
 
-  <section>
-    <h2>Certifications</h2>
-    <ul>
-      <li>AZ-900: Microsoft Azure Fundamentals</li>
-      <li>MS-900: Microsoft 365 Fundamentals</li>
-      <li>AZ-104: In Progress</li>
-    </ul>
-  </section>
+      <section class="main-block">
+        <h2><i class="fa fa-folder-open"></i> Projects</h2>
 
-  <section>
-    <h2>Projects</h2>
-    <h3>Cloud Resume Challenge (Azure Edition)</h3>
-    <ul>
-      <li>Built a live serverless resume site hosted on Netlify with HTTPS</li>
-      <li>Used Azure Functions with Cosmos DB to store and track visitor count</li>
-      <li>Automated CI/CD with GitHub Actions and secret management</li>
-    </ul>
+        <section class="blocks">
+          <div class="date"><span>2025</span><span>Present</span></div>
+          <div class="decorator"></div>
+          <div class="details">
+            <header>
+              <h3>Cloud Resume Challenge (Azure)</h3>
+              <span class="place">Personal Project</span>
+            </header>
+            <div>
+              <ul>
+                <li>Built a live serverless resume site hosted on Netlify with HTTPS</li>
+                <li>Connected Azure Functions and Cosmos DB to track visitor count</li>
+                <li>Automated deployment using GitHub Actions and secure secrets</li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
-    <h3>Enterprise Azure Governance Environment</h3>
-    <ul>
-      <li>Deployed management group hierarchy with Azure Policy for tagging and region enforcement</li>
-      <li>Used RBAC, Budgets with alerts, and reusable Bicep templates</li>
-    </ul>
+        <section class="blocks">
+          <div class="date"><span>2025</span></div>
+          <div class="decorator"></div>
+          <div class="details">
+            <header>
+              <h3>Enterprise Azure Governance Environment</h3>
+              <span class="place">Personal Project</span>
+            </header>
+            <div>
+              <ul>
+                <li>Designed an Azure governance framework with management groups and policies</li>
+                <li>Enforced tagging, regional locks, and budget alerts using Bicep and Azure Policy</li>
+                <li>Deployed reusable infrastructure modules via GitHub Actions</li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
-    <h3>App Tier Deployment (Enterprise Simulation)</h3>
-    <ul>
-      <li>Deployed a secure, load-balanced app tier using VNet, NSG, VMs and diagnostics</li>
-      <li>Used Bicep and GitHub Actions for automated deployment</li>
-    </ul>
-  </section>
+        <section class="blocks">
+          <div class="date"><span>2025</span></div>
+          <div class="decorator"></div>
+          <div class="details">
+            <header>
+              <h3>App Tier Deployment (Enterprise Simulation)</h3>
+              <span class="place">Personal Project</span>
+            </header>
+            <div>
+              <ul>
+                <li>Deployed a secure, load-balanced app tier with VMs, NSG, diagnostics, and monitoring</li>
+                <li>Managed deployments through Bicep and CI/CD automation via GitHub Actions</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </section>
 
-  <section>
-    <h2>Experience</h2>
-    <h3>Operator – Virgin Australia</h3>
-    <p>Nov 2022 – Present</p>
-    <ul>
-      <li>Coordinated ground operations in a time-critical aviation environment</li>
-      <li>Collaborated with engineers and teams using Shiftlogic, Oracle, and M365</li>
-      <li>Improved communication using Microsoft Teams</li>
-    </ul>
+      <section class="main-block concise">
+        <h2><i class="fa fa-graduation-cap"></i> Education</h2>
+        <section class="blocks">
+          <div class="date"><span>2016</span></div>
+          <div class="decorator"></div>
+          <div class="details">
+            <header>
+              <h3>VCE</h3>
+              <span class="place">Penola Catholic College</span>
+              <span class="location">Melbourne, VIC</span>
+            </header>
+            <div>Graduated 2016</div>
+          </div>
+        </section>
 
-    <h3>Service Supervisor & Storeman – Coles Supermarkets</h3>
-    <p>2015 – 2022</p>
-    <ul>
-      <li>Led team operations in a fast-paced retail environment</li>
-      <li>Used Microsoft Office for scheduling, reporting, and inventory</li>
-      <li>Delivered customer service and resolved complaints effectively</li>
-    </ul>
-  </section>
+        <section class="blocks">
+          <div class="date"></div>
+          <div class="decorator"></div>
+          <div class="details">
+            <header>
+              <h3>Volunteering & Interests</h3>
+            </header>
+            <div>
+              <ul>
+                <li><strong>Volunteering:</strong> SecondBite (2012–2015) — Food rescue and distribution</li>
+                <li><strong>Interests:</strong> Aviation, travelling, MMA, football, gaming, reading, running</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
 
-  <section>
-    <h2>Education</h2>
-    <p>VCE – Penola Catholic College (Graduated 2016)</p>
-  </section>
+    <aside id="sidebar">
+      <div class="side-block" id="contact">
+        <h1>Contact Info</h1>
+        <ul>
+          <li><i class="fa fa-globe"></i> rhysgoonan.com</li>
+          <li><i class="fa fa-linkedin"></i> linkedin.com/in/rhysgoonan</li>
+          <li><i class="fa fa-envelope"></i> rhysgoonan@gmail.com</li>
+          <li><i class="fa fa-phone"></i> 0459 343 085</li>
+        </ul>
+      </div>
 
-  <section>
-    <h2>Additional</h2>
-    <p><strong>Volunteering:</strong> SecondBite (2012–2015) – Food rescue and distribution</p>
-    <p><strong>Interests:</strong> Aviation, travelling, MMA, football, gaming, reading, running</p>
-  </section>
+      <div class="side-block" id="skills">
+        <h1>Skills</h1>
+        <ul>
+          <li>Azure</li>
+          <li>Bicep</li>
+          <li>Azure Policy</li>
+          <li>RBAC</li>
+          <li>GitHub Actions</li>
+          <li>CI/CD</li>
+          <li>Cosmos DB</li>
+          <li>PowerShell</li>
+          <li>Microsoft 365</li>
+          <li>Networking & NSGs</li>
+          <li>Oracle & Citrix</li>
+        </ul>
+      </div>
 
-  <footer>
-    <p>References available upon request.</p>
-    <p>Visitor count: <span id="visitor-count">Loading...</span></p>
-  </footer>
+      <div class="side-block" id="disclaimer">
+        <p>Visitor count: <span id="visitor-count">Loading...</span></p>
+        <p class="version">Last updated: 2025-05-22</p>
+      </div>
+    </aside>
 
-  <script>
-    fetch("https://crc-function-app.azurewebsites.net/api/visitorcounter")
-      .then(response => response.json())
-      .then(data => {
-        document.getElementById("visitor-count").innerText = data.count;
-      })
-      .catch(err => {
-        console.error("Visitor counter failed:", err);
-        document.getElementById("visitor-count").innerText = "Error";
-      });
-  </script>
-</body>
+    <script>
+      fetch("https://crc-function-app.azurewebsites.net/api/visitorcounter")
+        .then(response => response.json())
+        .then(data => {
+          document.getElementById("visitor-count").innerText = data.count;
+        })
+        .catch(err => {
+          console.error("Visitor counter failed:", err);
+          document.getElementById("visitor-count").innerText = "Error";
+        });
+    </script>
+  </body>
 </html>
