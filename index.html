@@ -1,96 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" moznomarginboxes>
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rhys Goonan | Cloud Engineer</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo|Montserrat:300,400,500&subset=latin-ext" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" />
+  <link rel="stylesheet" href="./style.css" />
 </head>
-<body>
-  <h1>Rhys Goonan</h1>
-  <div class="contact">
-    Melbourne, VIC | rhysgoonan@gmail.com | 0459 343 085 |
-    <a href="https://github.com/RhysG-123">GitHub</a> |
-    <a href="https://rhysgoonan.com">rhysgoonan.com</a>
-  </div>
-
-  <div class="section">
-    <h2 class="section-title">Summary</h2>
-    <p>
-      Cloud Engineer with hands-on experience deploying secure, scalable Azure environments using Infrastructure as Code, CI/CD pipelines, and enterprise governance standards. Skilled in Bicep, GitHub Actions, RBAC, and Azure Policy — demonstrated across production-grade personal projects aligned to real-world best practices.
-    </p>
-  </div>
-
-  <div class="section">
-    <h2 class="section-title">Skills</h2>
-    <p><strong>Cloud:</strong> Azure, Azure Functions, Cosmos DB, Azure CLI, Azure Policy<br />
-       <strong>IaC:</strong> Bicep, ARM Templates &nbsp;&nbsp; <strong>CI/CD:</strong> GitHub Actions, GitHub Secrets<br />
-       <strong>Tools:</strong> PowerShell, JavaScript, HTML/CSS, Markdown, Microsoft 365<br />
-       <strong>Other:</strong> NSG, VNet/Subnets, Load Balancing, Monitoring, DNS Management</p>
-  </div>
-
-  <div class="section">
-    <h2 class="section-title">Certifications</h2>
-    <ul>
-      <li>AZ-900 (Azure Fundamentals)</li>
-      <li>MS-900 (Microsoft 365)</li>
-      <li><em>AZ-104 in progress</em></li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2 class="section-title">Projects</h2>
-    <div class="project">
-      <strong>Cloud Resume Challenge (Azure Edition)</strong> – May 2025 – Present
-      <ul>
-        <li>Built a production-grade serverless resume site with automation and visitor tracking</li>
-        <li>Integrated Azure Functions with Cosmos DB and CI/CD via GitHub Actions</li>
-        <li>Enforced tagging and policy compliance; hosted frontend on Netlify with HTTPS</li>
-      </ul>
-    </div>
-    <div class="project">
-      <strong>Enterprise Azure Governance Environment</strong> – Apr 2025
-      <ul>
-        <li>Architected a full enterprise environment using management groups and policies</li>
-        <li>Built modular Bicep templates with GitHub CI for reusable deployment</li>
-        <li>Implemented RBAC, budgets with alerts, and region-locked deployments</li>
-      </ul>
-    </div>
-    <div class="project">
-      <strong>App Tier Deployment (Enterprise Simulation)</strong> – Apr 2025
-      <ul>
-        <li>Provisioned a secure network with 2 load-balanced Windows VMs</li>
-        <li>Used Bicep and GitHub Actions to automate infrastructure and diagnostics</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2 class="section-title">Experience</h2>
-    <div class="job">
-      <strong>Virgin Australia</strong> – Operator | Nov 2022 – Present
-      <ul>
-        <li>Coordinated aviation logistics under time-critical, safety-first constraints</li>
-        <li>Collaborated with cross-functional teams using M365, Oracle, Citrix</li>
-        <li>Operated in a structured, clearance-based environment with defined procedures</li>
-      </ul>
-    </div>
-    <div class="job">
-      <strong>Coles Supermarkets</strong> – Service Supervisor & Storeman | 2015 – 2022
-      <ul>
-        <li>Led inventory coordination and trained staff during COVID-era logistics surges</li>
-        <li>Optimised storage across departments and delivered high-volume customer service</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2 class="section-title">Education</h2>
-    <p><strong>Penola Catholic College</strong> — VCE, Graduated 2016</p>
-  </div>
-
-  <div class="section">
-    <p><strong>SecondBite Volunteer</strong> (2012–2015); <strong>Interests:</strong> aviation, travelling, MMA, football, gaming, reading, running</p>
-  </div>
+<body class="letter">
+  <section id="save">
+    <section class="sheet">
+      <aside>
+        <section class="contact">
+          <h6>Contact</h6>
+          <ul>
+            <li><p><i class="fa fa-map-marker-alt"></i> Melbourne, VIC</p></li>
+            <li><p><i class="fa fa-phone"></i> <a href="tel:+61459343085">0459 343 085</a></p></li>
+            <li><p><i class="fa fa-envelope"></i> <a href="mailto:rhysgoonan@gmail.com">rhysgoonan@gmail.com</a></p></li>
+            <li><p><i class="fa fa-globe-americas"></i> <a href="https://rhysgoonan.com">rhysgoonan.com</a></p></li>
+            <li><p><i class="fab fa-github"></i> <a href="https://github.com/RhysG-123">github.com/RhysG-123</a></p></li>
+          </ul>
+        </section>
+        <section class="skills">
+          <h6>Skills</h6>
+          <ul>
+            <li><span>Azure</span></li>
+            <li><span>Bicep</span></li>
+            <li><span>Azure Policy</span></li>
+            <li><span>RBAC</span></li>
+            <li><span>CI/CD</span></li>
+            <li><span>GitHub Actions</span></li>
+          </ul>
+        </section>
+        <section class="skills">
+          <h6>Certifications</h6>
+          <ul>
+            <li><span>AZ-900</span></li>
+            <li><span>MS-900</span></li>
+            <li><span>AZ-104 (in progress)</span></li>
+          </ul>
+        </section>
+      </aside>
+      <section>
+        <header class="name">
+          <h1>Rhys Goonan</h1>
+          <h6>Cloud Engineer</h6>
+          <hr />
+        </header>
+        <section>
+          <section class="summary">
+            <h6>Summary</h6>
+            <p>Cloud Engineer with hands-on experience deploying secure, scalable Azure environments using Infrastructure as Code, CI/CD pipelines, and enterprise governance standards. Skilled in Bicep, GitHub Actions, RBAC, and Azure Policy — demonstrated across production-grade personal projects aligned to real-world best practices.</p>
+          </section>
+          <section class="experience">
+            <h6>Experience</h6>
+            <ol>
+              <li>
+                <header><p>Operator</p><time>2022 – Present</time></header>
+                <span>Virgin Australia</span>
+                <ul>
+                  <li>Coordinated logistics under high-pressure safety-driven conditions</li>
+                  <li>Used M365, Oracle, and Citrix in collaborative shift operations</li>
+                  <li>Worked within a hierarchical, structured environment</li>
+                </ul>
+              </li>
+              <li>
+                <header><p>Service Supervisor & Storeman</p><time>2015 – 2022</time></header>
+                <span>Coles Supermarkets</span>
+                <ul>
+                  <li>Led a team maintaining inventory and managing perishables</li>
+                  <li>Coordinated during COVID-related logistical surges</li>
+                  <li>Provided high-volume customer service</li>
+                </ul>
+              </li>
+            </ol>
+          </section>
+          <section class="education">
+            <h6>Education</h6>
+            <ol>
+              <li>
+                <div>
+                  <p>VCE, Penola Catholic College</p>
+                  <time>Graduated 2016</time>
+                </div>
+              </li>
+            </ol>
+          </section>
+          <section class="experience">
+            <h6>Projects</h6>
+            <ol>
+              <li>
+                <header><p>Cloud Resume Challenge</p><time>May 2025 – Present</time></header>
+                <ul>
+                  <li>Azure Functions + Cosmos DB backend</li>
+                  <li>Automated CI/CD using GitHub Actions</li>
+                  <li>Hosted on Netlify with HTTPS, tagged via Azure Policy</li>
+                </ul>
+              </li>
+              <li>
+                <header><p>Enterprise Governance Setup</p><time>Apr 2025</time></header>
+                <ul>
+                  <li>Built Bicep-based environment with RBAC and Policy enforcement</li>
+                  <li>Tagged resources, set budgets and action groups</li>
+                </ul>
+              </li>
+              <li>
+                <header><p>App Tier Deployment</p><time>Apr 2025</time></header>
+                <ul>
+                  <li>Deployed 2 Windows VMs behind a load balancer inside a VNet</li>
+                  <li>Automated provisioning using GitHub Actions and Bicep</li>
+                </ul>
+              </li>
+            </ol>
+          </section>
+        </section>
+      </section>
+    </section>
+  </section>
 </body>
 </html>
