@@ -280,3 +280,55 @@ li{
   font-weight: 400;
   font-style: normal;
 }
+
+/* ========== Mobile Responsiveness ========== */
+@media screen and (max-width: 768px) {
+  body {
+    width: auto;
+    height: auto;
+    font-size: 10pt;
+    padding: 1rem;
+  }
+
+  #main, #sidebar {
+    float: none;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  #title {
+    left: 0;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .blocks {
+    flex-direction: column;
+  }
+
+  .date {
+    text-align: left;
+    margin-bottom: 0.5rem;
+  }
+
+  .decorator {
+    display: none;
+  }
+
+  .subtitle {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 9pt;
+  }
+
+  #skills ul {
+    columns: 1;
+  }
+
+  #disclaimer {
+    position: static;
+    margin-top: 2rem;
+    text-align: center;
+  }
+}
